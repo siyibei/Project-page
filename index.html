@@ -6,85 +6,81 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #e6f7f9;
-      color: #2e4e3f;
+      font-family: Arial, sans-serif;
+      background-color: aliceblue;
+      color: dimgray;
     }
 
     header {
-      background-color: #48c9b0;
+      background-color: mediumaquamarine;
       padding: 20px;
       text-align: center;
       color: white;
-      border-bottom: 5px solid #5dade2;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      margin: 0;
+      border-bottom: 4px solid cornflowerblue;
     }
 
     .container {
-      padding: 30px;
-      max-width: 1000px;
+      padding: 20px;
+      max-width: 900px;
       margin: auto;
     }
 
     .product {
       display: flex;
       align-items: center;
-      margin-bottom: 30px;
-      background-color: #ffffff;
-      border: 2px solid #b2dfdb;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+      background-color: white;
+      border: 1px solid lightgray;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
     }
 
     .product img {
       width: 120px;
-      margin-right: 20px;
-      border-radius: 5px;
-      border: 1px solid #ddd;
+      height: auto;
+      margin-right: 15px;
+      border: 1px solid lightgray;
+      border-radius: 4px;
     }
 
     .product h3 {
-      color: #2c7873;
-      margin: 0 0 5px;
-    }
-
-    .product p {
-      margin: 0;
+      color: seagreen;
+      margin: 0 0 5px 0;
     }
 
     h2 {
-      color: #2980b9;
-      margin-top: 40px;
+      color: steelblue;
+      margin-top: 30px;
     }
 
     a {
-      color: #117a65;
+      color: teal;
       font-weight: bold;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
 
     .footer {
       text-align: center;
-      padding: 15px;
-      background-color: #d5f5e3;
+      padding: 10px;
+      background-color: honeydew;
       font-size: 0.9em;
-      color: #555;
-      border-top: 2px solid #48c9b0;
-      margin-top: 40px;
+      color: dimgray;
+      border-top: 1px solid lightgray;
+      margin-top: 30px;
     }
 
-    .catalog, .contact {
-      margin-top: 20px;
-      font-size: 1.1em;
-    }
-
-    .catalog a {
-      color: #1e8449;
-      text-decoration: underline;
+    @media (max-width: 600px) {
+      .product {
+        flex-direction: column;
+        text-align: center;
+      }
+      .product img {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
@@ -95,7 +91,8 @@
 </header>
 
 <div class="container">
-  <p><strong><em>Eloheh</em></strong> offers science-backed, holistic healthcare products. We believe in prevention, restoration, and natural care that fits your everyday life.</p>
+
+  <p><strong><em>Eloheh</em></strong> offers practical, science-based healthcare products. Our goal is to provide prevention, everyday care, and gentle support you can trust.</p>
 
   <h2>Our Featured Products</h2>
 
@@ -103,63 +100,57 @@
     <img src="vitalboost.png" alt="VitalBoost Multivitamins">
     <div>
       <h3>VitalBoost Daily Multivitamins</h3>
-      <p>Boosts immunity and energy. Formulated with essential nutrients for daily health.</p>
+      <p>Daily vitamins and minerals to support immune health and keep your energy steady.</p>
     </div>
   </div>
 
   <div class="product">
-    <img src="joint-support.png" alt="Joint Support Complex">
+    <img src="joint-support.png" alt="FlexGuard Joint Support">
     <div>
       <h3>FlexGuard Joint Support</h3>
-      <p>Reduces stiffness and improves joint mobility. Great for active lifestyles.</p>
+      <p>Helps reduce stiffness and improve mobility—great for active people.</p>
     </div>
   </div>
 
   <div class="product">
-    <img src="purerelief.png" alt="PureRelief Oil Blend">
+    <img src="purerelief.png" alt="PureRelief Essential Oils">
     <div>
       <h3>PureRelief Essential Oil Blends</h3>
-      <p>Calming, aromatic blends that promote better sleep and reduce stress.</p>
+      <p>Aromatic blends that help you relax, sleep better, and reduce stress.</p>
     </div>
   </div>
 
   <div class="product">
-    <img src="sanitizers.png" alt="CleanShield Kit">
+    <img src="sanitizers.png" alt="CleanShield Sanitizer Kits">
     <div>
       <h3>CleanShield Sanitizer Kits</h3>
-      <p>Advanced hygiene kit with sanitizer and surface spray for all-day protection.</p>
+      <p>Complete hygiene kit with sanitizer and spray for all-day protection.</p>
     </div>
   </div>
 
-  <h2>Top Sellers (Ranked)</h2>
+  <h2>Top Sellers</h2>
   <ol>
     <li>VitalBoost Daily Multivitamins</li>
     <li>FlexGuard Joint Support</li>
     <li>PureRelief Essential Oils</li>
   </ol>
 
-  <h2>Why Customers Love Our Products</h2>
+  <h2>Why People Choose Us</h2>
   <ul>
-    <li>All-natural and ethically sourced ingredients</li>
-    <li>Backed by scientific research and clinical trials</li>
-    <li>Affordable and accessible wellness solutions</li>
-    <li>Eco-friendly packaging and sustainable sourcing</li>
-    <li>Trusted by thousands of happy customers</li>
+    <li>Natural ingredients with clear sources</li>
+    <li>Proven by research</li>
+    <li>Affordable prices</li>
+    <li>Eco-friendly packaging</li>
+    <li>Trusted by many happy customers</li>
   </ul>
 
-  <p class="catalog">
-    📥 <a href="Eloheh_Product_Catalog_Detailed.pdf" download>Click here to download our full product catalog (PDF)</a>
-  </p>
+  <p><a href="Eloheh_Product_Catalog_Detailed.pdf" download>Download our full product catalog (PDF)</a></p>
+  <p><a href="mailto:sbei@purdue.edu">Email us</a> with any questions or feedback.</p>
 
-  <p class="catalog">📖 For more info on our product design principles, read <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8770922/" target="_blank">this article on sustainable healthcare innovations</a>.</p>
-
-  <p class="contact">📧 <a href="mailto:sbei@purdue.edu">Contact Me</a> if you have any questions or suggestions.</p>
 </div>
 
 <div class="footer">
-  <p>
-    📅 <script>document.write("Date last modified: " + document.lastModified);</script>
-  </p>
+  <script>document.write("Last updated: " + document.lastModified);</script>
 </div>
 
 </body>
